@@ -1,2 +1,3 @@
 FROM jupyter/scipy-notebook:latest
-RUN pip install xgboost psycopg2-binary
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
